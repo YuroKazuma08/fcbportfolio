@@ -5,45 +5,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Piolo Quintos | Web Developer Portfolio</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-navbar">
-		<a class="navbar-brand" href="#main-navbar">My Portfolio</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#main-header">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#main-body">Gallery</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
-				</li>
-			</ul>
+	<nav class="my-navbar">
+		<a href="#portfolio-photo" id="my-logo"><span>My</span> Portfolio</a>
+		<ul class="navbar-links">
+			<li class=""><a href="#">ABOUT</a></li>
+			<li class=""><a href="#">PROJECTS</a></li>
+			<li class=""><a href="#">CONTACT</a></li>
+		</ul>
+		<div id="hamburger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
 		</div>
 	</nav>
-	<div class="main-container">
-		<header id="main-header">
-			<div id="portfolio-photo">
-				<img src="images/image1.png" alt="">
-			</div>
+	<main id="main-content">
+		<header class="main-header">
+			<div id="portfolio-photo"><img src="images/image1.png" alt=""></div>
 			<div id="header-info">
-				<span id="portfolio-intro">
-					<h1>Engr. Piolo Quintos</h1>
+				<div id="header-intro">
+					<h1>ENGR. PIOLO QUINTOS</h1>
 					<h2>&lt; Full Stack Web Developer &gt;</h2>
-				</span>
-				<div id="additional-info">
-					<span id="prog-languages">
+				</div>
+				<div id="header-additions">
+					<div>
 						<h3>LANGUAGES I SPEAK:</h3>
 						<ul>
 							<li>HTML</li>
@@ -51,52 +39,21 @@
 							<li>JavaScript</li>
 							<li>Python</li>
 						</ul>
-					</span>
-					<span id="tools-used">
+					</div>
+					<div>
 						<h3>TOOLS I USE:</h3>
 						<ul>
 							<li>Git Bash / Terminal</li>
-							<li>Sublime Text / VS Code / Pycharm</li>
+							<li>VS Code / Pycharm</li>
 							<li>Github</li>
 							<li>Google Chrome</li>
 						</ul>
-					</span>
+					</div>
 				</div>
 			</div>
 		</header>
-		<section id="main-body">
-		</section>
-	</div>
-	<!-- <div class="container">
-		<section id="landing">
-			<h1>Full Stack Developer</h1>
-			<p>Personal Description:</p>
-			<img src="images/image1.png">
-		</section>
-
-		<section id="gallery">
-			<h2>Languages I speak:</h2>
-			<ul>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>JavaScript</li>
-				<li>Python</li>
-			</ul>
-			<h2>Tools I use:</h2>
-			<ul>
-				<li>Git Bash / Terminal</li>
-				<li>Sublime Text</li>
-				<li>Github</li>
-				<li>Google Chrome</li>
-			</ul>
-		</section>
-	</div> -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-		crossorigin="anonymous"></script>
+	</main>
+	<script src="app.js" type="text/javascript"></script>
 </body>
 
 </html>
